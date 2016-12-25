@@ -1,0 +1,8 @@
+.idea
+log
+worker
+fabfile.py
+*.pyc
+text8.model
+
+*.csv

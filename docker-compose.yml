@@ -1,0 +1,12 @@
+api:
+  image: diepdao12892/python-deep-learning:latest
+  environment:
+    - PYTHONPATH=/code
+    - WORD2VEC_MODEL_PATH=/tmp/GoogleNews-vectors-negative300.bin
+#  command: gunicorn -k tornado -w 2 -b 0.0.0.0:1999 main:app --max-requests 10000 --timeout 7200
+  command: python main.py
+  volumes:
+    - .:/code
+    - /root/word2vec/models:/tmp
+  ports:
+    - "1999:1999"

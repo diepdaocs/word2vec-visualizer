@@ -1,0 +1,6 @@
+gensim
+flask
+flask-restplus
+gunicorn
+tornado
+Cython
