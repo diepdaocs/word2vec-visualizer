@@ -4,3 +4,4 @@ flask-restplus
 gunicorn
 tornado
 Cython
+tensorflow==0.12.0
